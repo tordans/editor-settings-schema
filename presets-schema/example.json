@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Cargo bike parking",
+    "geometry": ["point", "area"],
+    "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "access": "no",
+      "cargo_bike": "designated",
+      "capacity": "",
+      "capacity:cargo_bike": "",
+      "position": "lane",
+      "covered": "no",
+      "fee": "no",
+      "traffic_sign": "DE:314,1010-69"
+    }
+  },
+  {
+    "name": "Bench with backrest",
+    "geometry": ["point"],
+    "tags": {
+      "amenity": "bench",
+      "backrest": "yes",
+      "material": "wood",
+      "seats": "3"
+    }
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Berlin Aerial 2025",
+    "url": "https://tiles.codefor.de/berlin/geoportal/luftbilder/2025-dop20rgb/{zoom}/{x}/{y}.png",
+    "maxzoom": 19
+  },
+  {
+    "name": "Berlin Aerial 2025 (example whithout optional maxzoom)",
+    "url": "https://tiles.codefor.de/berlin/geoportal/luftbilder/2025-dop20rgb/{zoom}/{x}/{y}.png"
+  }
+]
