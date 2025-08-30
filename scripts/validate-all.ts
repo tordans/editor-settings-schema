@@ -1,5 +1,5 @@
-import dataLayerExample from '../data-layer-schema/example.json' with { type: 'json' }
-import { DataLayersSchema } from '../data-layer-schema/zod-schema'
+import dataLayerExample from '../data-layers-schema/example.json' with { type: 'json' }
+import { DataLayersSchema } from '../data-layers-schema/zod-schema'
 import fieldsExample from '../fields-schema/example.json' with { type: 'json' }
 import { FieldsSchema } from '../fields-schema/zod-schema'
 import layersExample from '../layers-schema/example.json' with { type: 'json' }
