@@ -28,7 +28,7 @@ The tagging schema project https://github.com/openstreetmap/id-tagging-schema sh
 [
   {
     "name": "Cargo bike parking",
-    "geometry": ["point", "area"] /* point, area, relation */,
+    "geometry": ["point", "area"] /* point, 'line', area, relation, vertex */,
     "tags": {
       "amenity": "bicycle_parking",
       "bicycle_parking": "stands",
