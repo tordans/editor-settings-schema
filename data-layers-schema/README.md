@@ -52,6 +52,9 @@ The schema supports the following data formats:
 
 ### Schema TODOs
 
+- Should we have recommendations on styling (area, lines, points)?
+- Should we have recommendations on who to handle properties of the data?
+- Should we standardize a property like `osmTags` that the editor should treat differently, eg. provide a quick access to a copy action?
 - Should we add data on licensing? Like a license enum? And a flag for "OSM compatible" for licenses that require compatibility? And a required wiki page link to where the data is documented? One complexity is that this is not needed when the data is just used to review location on the ground, but only when data is copied.
 - List which formats are supported by popular editors
 
