@@ -7,5 +7,10 @@
   {
     "name": "Berlin Aerial 2025 (example whithout optional maxzoom)",
     "url": "https://tiles.codefor.de/berlin/geoportal/luftbilder/2025-dop20rgb/{zoom}/{x}/{y}.png"
+  },
+  {
+    "name": "WMS Example with projection",
+    "url": "https://example.com/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=layer&STYLES=&FORMAT=image/png&TRANSPARENT=true&WIDTH={width}&HEIGHT={height}&CRS={proj}&BBOX={bbox}",
+    "projection": "EPSG:3857"
   }
 ]

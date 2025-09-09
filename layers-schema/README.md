@@ -21,20 +21,48 @@ The editor layer index project (ELI) https://github.com/osmlab/editor-layer-inde
 ```jsonc
 [
   {
-    "name": "OpenStreetMap Carto",
+    "name": "Berlin Aerial 2025",
     "url": "https://tiles.codefor.de/berlin/geoportal/luftbilder/2025-dop20rgb/{zoom}/{x}/{y}.png",
-    /* OPTIONAL */ "maxoom": 19,
+    /* OPTIONAL */ "maxzoom": 19,
+  },
+  {
+    "name": "WMS Example with projection",
+    "url": "https://example.com/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=layer&STYLES=&FORMAT=image/png&TRANSPARENT=true&WIDTH={width}&HEIGHT={height}&CRS={proj}&BBOX={bbox}",
+    /* OPTIONAL */ "projection": "EPSG:3857",
   },
 ]
 ```
 
-### Schema TODOs
+## Supported URL Variables
 
-- What minimal data do we need to add to the schema in terms of projections?
+### TMS/Tile Variables
 
-## Data formats
+- `{zoom}`: Tile zoom level
+- `{x}`, `{y}`: Tile X/Y coordinates
+- `{-y}`: Inverted TMS-style Y coordinates
+- `{@2x}`: Resolution factor
 
-`TODO`: Define complete list of supported formats and which editor supports what.
+### WMS Variables
+
+- `{proj}`: Requested projection (only EPSG:3857)
+- `{wkid}`: Like proj, but without EPSG (only 3857)
+- `{width}`, `{height}`: Requested size (always 256)
+- `{bbox}`: Requested bounds (e.g. minX,minY,maxX,maxY)
+
+## Supported Projections
+
+The schema supports the following WMS projections:
+
+- `EPSG:3857` - Web Mercator (primary)
+- `EPSG:900913`, `EPSG:3587`, `EPSG:54004`, `EPSG:41001`, `EPSG:102113`, `EPSG:102100`, `EPSG:3785` - Web Mercator alternatives
+- `EPSG:4326` - WGS 84 (Equirectangular)
+
+## Schema Attributes
+
+- `name` (required): Display name for the layer
+- `url` (required): Layer URL template with supported variables
+- `maxzoom` (optional): Maximum zoom level (0-25)
+- `projection` (optional): WMS projection code
 
 ## UI suggestions
 
