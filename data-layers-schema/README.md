@@ -1,6 +1,6 @@
 # Schema to share user data layers between editors
 
-**Status:** TODO
+**Status:** DRAFT
 **Version:** `0.1`
 
 ## Definition

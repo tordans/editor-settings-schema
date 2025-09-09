@@ -9,9 +9,9 @@ The settings should be stored in the [`/user/preferences` of the OSM API](https:
 
 ## TOC
 
-| Topic                                              | Status | Version |
-| -------------------------------------------------- | ------ | ------- |
-| [data-layer-schema](./data-layer-schema/README.md) | TODO   | 0.1     |
-| [fields-schema](./fields-schema/README.md)         | TODO   | 0.1     |
-| [layers-schema](./layers-schema/README.md)         | TODO   | 0.1     |
-| [presets-schema](./presets-schema/README.md)       | TODO   | 0.1     |
+| Topic                                                | Status | Version |
+| ---------------------------------------------------- | ------ | ------- |
+| [data-layers-schema](./data-layers-schema/README.md) | DRAFT  | 0.1     |
+| [fields-schema](./fields-schema/README.md)           | DRAFT  | 0.1     |
+| [layers-schema](./layers-schema/README.md)           | DRAFT  | 0.1     |
+| [presets-schema](./presets-schema/README.md)         | DRAFT  | 0.1     |
