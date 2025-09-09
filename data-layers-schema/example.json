@@ -1,6 +1,17 @@
 [
   {
     "name": "Missing Stolpersteine Berlin",
-    "url": "https://osm-check.chrpaul.de/report/stolpersteine-berlin-complete-by-kiez/stolpersteine-berlin-not-on-osm-no-nearby-neuk%C3%B6lln%5B2025-08-18%5D.gpx"
+    "url": "https://osm-check.chrpaul.de/report/stolpersteine-berlin-complete-by-kiez/stolpersteine-berlin-not-on-osm-no-nearby-neuk%C3%B6lln%5B2025-08-18%5D.gpx",
+    "format": "GPX"
+  },
+  {
+    "name": "Berlin Bike Parking Survey",
+    "url": "https://example.com/berlin-bike-parking-2024.geojson",
+    "format": "GeoJSON"
+  },
+  {
+    "name": "Missing Playgrounds",
+    "url": "https://data.example.com/missing-playgrounds.kml",
+    "format": "KML"
   }
 ]

@@ -1,10 +1,13 @@
 import { z } from 'zod'
 
+// Supported data formats
+const supportedFormats = z.enum(['GeoJSON', 'GPX', 'KML', 'PMTiles'])
+
 // Schema for individual data layer
 export const DataLayerSchema = z.object({
   name: z.string().min(1, { error: 'Name is required' }),
-  // TODO: Add check for the right `{z}` replacement strings
-  url: z.string().url({ error: 'Must be a valid URL' }),
+  url: z.url({ error: 'Must be a valid URL' }),
+  format: supportedFormats,
 })
 
 // Schema for array of data layers

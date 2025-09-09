@@ -11,7 +11,7 @@ The settings should be stored in the [`/user/preferences` of the OSM API](https:
 
 | Topic                                                | Status | Version |
 | ---------------------------------------------------- | ------ | ------- |
-| [data-layers-schema](./data-layers-schema/README.md) | DRAFT  | 0.1     |
+| [data-layers-schema](./data-layers-schema/README.md) | DRAFT  | 0.2     |
 | [fields-schema](./fields-schema/README.md)           | DRAFT  | 0.1     |
 | [layers-schema](./layers-schema/README.md)           | DRAFT  | 0.2     |
 | [presets-schema](./presets-schema/README.md)         | DRAFT  | 0.1     |

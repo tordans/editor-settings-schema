@@ -1,7 +1,7 @@
 # Schema to share user data layers between editors
 
 **Status:** DRAFT
-**Version:** `0.1`
+**Version:** `0.2`
 
 ## Definition
 
@@ -25,20 +25,35 @@ Data layers are geoJson-like files that are used to display geographic data on a
   {
     "name": "Missing Stolpersteine Berlin",
     "url": "https://osm-check.chrpaul.de/report/stolpersteine-berlin-complete-by-kiez/stolpersteine-berlin-not-on-osm-no-nearby-neuk%C3%B6lln%5B2025-08-18%5D.gpx",
+    "format": "GPX",
+  },
+  {
+    "name": "Berlin Bike Parking Survey",
+    "url": "https://example.com/berlin-bike-parking-2024.geojson",
+    "format": "GeoJSON",
   },
 ]
 ```
 
+## Schema Attributes
+
+- `name` (required): Display name for the data layer
+- `url` (required): URL to the data file
+- `format` (required): Data format type
+
+## Supported Data Formats
+
+The schema supports the following data formats:
+
+- `GeoJSON` .geojson
+- `GPX` .gpx
+- `KML` .kml
+- `PMTiles` .pmtiles
+
 ### Schema TODOs
 
-- Should we have an enum of file formats or infer this from the URL always? The URL does not have to have a file ending, though…
 - Should we add data on licensing? Like a license enum? And a flag for "OSM compatible" for licenses that require compatibility? And a required wiki page link to where the data is documented? One complexity is that this is not needed when the data is just used to review location on the ground, but only when data is copied.
-
-## Data formats
-
-Possible data sources are `.geojson`, `.gpx`, `.kml`, `.pmtiles`
-
-`TODO`: List which formats are supported by popular editors
+- List which formats are supported by popular editors
 
 ## UI suggestions
 
