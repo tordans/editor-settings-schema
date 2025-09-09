@@ -1,7 +1,7 @@
 # Schema to share user background layers between editors
 
 **Status:** DRAFT
-**Version:** `0.1`
+**Version:** `0.2`
 
 ## Definition
 
