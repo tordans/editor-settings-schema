@@ -1,7 +1,7 @@
 # editor-settings-schema
 
 > [!WARNING]
-> This project is WIP
+> This is an idea for now. Please help improve it…
 
 A collection of schema for OSM editors so share user settings between editors.
 
